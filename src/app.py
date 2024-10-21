@@ -52,7 +52,7 @@ def get_users():
 
     return jsonify(usuarioslist),200
 
-@app.route('/user/favorites')
+@app.route('/users/favorites')
 def get_user_favorites():
     current_user_id = 1
     user = User.query.get(current_user_id)
